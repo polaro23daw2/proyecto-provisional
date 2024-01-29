@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Recursos Hídricos Transfronterizos | GP1 - Aigües</title>
+    <link rel="icon" type="image/png" href="../png/logo-negro.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/resenas.css">
+</head>
+<body>
+    <header class="page__header">
+        <button class="loginButton"><a href="../html/login.html">
+            <div class="userButton">
+                <span id="usernameDisplay"></span>
+            </div>
+            <img src="../png/user.png"></a>
+        </button>
+        <nav class="navigation__container">
+            <div class="navigation__container--navs navigation__container--fixed navigation__container--top">
+                <section class="desktopNav__container" data-top-component="desktop-nav" data-page-position="nav">
+                    <div class="desktopNav">
+                        <div class="desktopNav__upper">
+                            <div class="desktopNav__tabAndLogoContainer">
+                                <div class="insider desktopNav__tabContainer">
+                                </div>
+                                <a class="desktopNav__logo" href="/index">
+                                    <img src="../png/logo-blanco.png" alt="Logo nuestro" height="70">
+                                </a>
+                            </div>
+                            <div class="desktopNav__lower">
+                                <ul class="desktopNav__linkContainer">
+                                    <li class="desktopNav__linkWrapper"><a id="mvl-flyout-button-0"
+                                        class="desktopNav__link mvl-flyout-button" href="../html/marco.html">Marco Teórico</a>
+                                        <div class="desktopNav__flyout-container nav-flyout-container-0"></div>
+                                    </li>
+                                    <li class="desktopNav__linkWrapper"><a id="mvl-flyout-button-1"
+                                        class="desktopNav__link mvl-flyout-button" href="../html/seguridad-nacional.html">Agua en S.N.</a>
+                                        <div class="desktopNav__flyout-container nav-flyout-container-1"></div>
+                                    </li>
+                                    <li class="desktopNav__linkWrapper"><a id="mvl-flyout-button-2"
+                                        class="desktopNav__link mvl-flyout-button" href="../html/conflictos.html">Conflictos</a>
+                                        <div class="desktopNav__flyout-container nav-flyout-container-2"></div>
+                                    </li>
+                                    <li class="desktopNav__linkWrapper"><a id="mvl-flyout-button-3"
+                                        class="desktopNav__link mvl-flyout-button" href="../html/gestion-recursos.html">Gestión de recursos</a>
+                                        <div class="desktopNav__flyout-container nav-flyout-container-3"></div>
+                                    </li>
+                                    <li class="desktopNav__linkWrapper"><a id="mvl-flyout-button-4"
+                                        class="desktopNav__link mvl-flyout-button" href="../html/derecho-internacional.html">Derecho internacional</a>
+                                        <div class="desktopNav__flyout-container nav-flyout-container-4"></div>
+                                    </li>
+                                    <li class="desktopNav__linkWrapper"><a id="mvl-flyout-button-5"
+                                        class="desktopNav__link mvl-flyout-button" href="../html/tecnologias.html">Tecnologías y estrategias</a>
+                                        <div class="desktopNav__flyout-container nav-flyout-container-5"></div>
+                                    </li>
+                                    <li class="desktopNav__linkWrapper"><a id="mvl-flyout-button-6"
+                                        class="desktopNav__link mvl-flyout-button" href="../html/cambio-climatico.html">Cambio climático</a>
+                                        <div class="desktopNav__flyout-container nav-flyout-container-6"></div>
+                                    </li>
+                                    <li class="desktopNav__linkWrapper"><a id="mvl-flyout-button-7"
+                                        class="desktopNav__link mvl-flyout-button" href="../html/conclusiones.html">Conclusiones</a>
+                                        <div class="desktopNav__flyout-container nav-flyout-container-7"></div>
+                                    </li>
+                                    <li class="desktopNav__linkWrapper"><a id="mvl-flyout-button-7"
+                                        class="desktopNav__link mvl-flyout-button" href="../html/sobre-nosaltres.html">Nosotros</a>
+                                    <div class="desktopNav__flyout-container nav-flyout-container-7"></div>
+                                </li>
+                                </ul>
+                                <div id="adminDiv" style="display: none;">
+                                    <ul class="desktopNav__linkContainer">
+                                        <li class="desktopNav__linkWrapper">Administración |</a>
+                                        <div class="desktopNav__flyout-container nav-flyout-container-1"></div>
+                                        </li>
+                                        <li class="desktopNav__linkWrapper"><a id="mvl-flyout-button-2"
+                                            class="desktopNav__link mvl-flyout-button" href="../html/VerUsuarios.html">Ver Usuarios</a>
+                                        <div class="desktopNav__flyout-container nav-flyout-container-10"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+            </div>
+        </nav>
+    </header>
+    <script>
+       document.addEventListener('DOMContentLoaded', function() {
+        const adminDiv = document.getElementById('adminDiv');
+
+        // Verificar si el usuario no es administrador
+        if (!document.cookie.split('; ').find(row => row.startsWith('administrador=true'))) {
+            // Ocultar el div si no es administrador
+            adminDiv.style.display = 'none';
+        } else {
+            // Mostrar el div si es administrador
+            adminDiv.style.display = 'block';
+        }
+        });
+   </script>
+    <div class="slider-wrap">
+        <div class="single-slide" id="slide-1"></div>
+        <div class="single-slide" id="slide-2"></div>
+        <div class="single-slide" id="slide-3"></div>
+        <div class="single-slide" id="slide-4"></div>
+        <div class="single-slide" id="slide-5"></div>
+    </div>
+    <br><br><br>
+    <center><canvas id="myCanvas" width="1500" height="150" data-texto="GESTIÓN DE RECURSOS HÍDRICOS TRANSFRONTERIZOS"></canvas></center>
+
+    <br><br><br>
+    <div class="contenido-pagina">
+        <h2><b>Definición</b></h2>
+        <p>La gestión de recursos hídricos transfronterizos implica la implementación de estrategias y acuerdos colaborativos entre países que comparten una cuenca hidrográfica común. Esto incluye la distribución equitativa de agua, la mitigación de impactos ambientales y la promoción de la sostenibilidad en el uso de los recursos hídricos.</p>
+        <div>
+            <h3>Ejemplos</h3>
+                <h4>Río Danubio</h4>
+                <p><b>Situación:</b> Múltiples países, incluyendo Alemania, Austria, Eslovaquia, y Hungría comparten la cuenca del río Danubio.</p>
+                <p><b>Gestión:</b> La Comisión Internacional para la Protección del Danubio (ICPDR) ha facilitado la cooperación entre estos países para abordar temas como la calidad del agua, la gestión de represas y la navegación.</p>
+                <h4>Cuenca del Mekong</h4>
+                <p><b>Situación:</b> La cuenca del río Mekong abarca varios países del sudeste asiático, incluyendo China, Myanmar, Laos, Tailandia, Camboya y Vietnam</p>
+                <p><b>Gestión:</b> Se ha establecido la Comisión del Río Mekong (MRC) para facilitar la colaboración en la gestión sostenible de los recursos hídricos, abordando desafíos como la construcción de represas y la protección del ecosistema.</p>
+                <h4>Acuerdo de la Cuenca del Rin</h4>
+                <p><b>Situación:</b> Países como Suiza, Liechtenstein, Austria, Alemania, Francia, Luxemburgo y los Países Bajos comparten la cuenca del río Rin.</p>
+                <p><b>Gestión:</b> A través del Acuerdo de la Cuenca del Rin, se han establecido medidas para la gestión conjunta de la calidad del agua, la protección contra inundaciones y la coordinación en casos de contaminación.</p>
+                <h4>Convención sobre la Protección y Utilización de los Cursos de Agua Transfronterizos y de los Lagos Internacionales</h4>
+                <p><b>Situación:</b> Varios países europeos participan en esta convención para gestionar cursos de agua transfronterizos.</p>
+                <p><b>Gestión:</b> Esta convención establece principios y normas para la gestión de aguas transfronterizas, promoviendo la cooperación para la prevención de la contaminación y la protección de los ecosistemas acuáticos.</p>
+            </div>
+    </div>
+    <br><br><br>
+    <footer class="page__header">
+        <div class="columna">
+            <h2>Direcció</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.217023956609!2d2.187923576060926!3d41.41280737129661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a32f21aff871%3A0x8a22bf1df6194fbd!2sEscola%20Jesu%C3%AFtes%20El%20Clot!5e0!3m2!1sca!2ses!4v1700584988956!5m2!1sca!2ses" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          
+        </div>
+
+        <div class="columna">
+            <h2>Reseñas</h2>
+
+            <div class="historialReseñas"></div>
+        </div>
+        
+
+        <div class="columna">
+            <h2>Contacte</h2>
+            <br><br>
+            <p>Email: <a href="mailto:info@fjeclot.edu">info@fjeclot.edu</a></p>
+            <p>Teléfono: (+34) <a href="tel:933525052">933 52 50 52</a></p>
+            
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="../js/resenas.js"></script>
+    <script type="text/javascript" src="../js/DomCanvasCookies.js"></script>
+    <script src="../js/canvas_titulos.js"></script>
+</body>
+</html>
